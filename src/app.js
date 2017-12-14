@@ -1,15 +1,51 @@
 import React, { Component } from 'react';
-import {render} from 'react-dom';
+import { DragDropContext } from 'react-dnd';
+import HTML5Backend from 'react-dnd-html5-backend';
+import Container from './components/container';
 
 import './app.styl';
 
-export default class App extends Component {
+class App extends Component {
+ /*const colOne = [];
+
+  const colTwo = [
+    {
+      id: 1,
+      text: "Element One"
+    },
+    {
+      id: 2,
+      text: "Element Two"
+    },
+    {
+      id: 6,
+      text: "Element Three"
+    },
+    {
+      id: 4,
+      text: "Element Four"
+    },
+    {
+      id: 5,
+      text: "Element Five"
+    },
+    {
+      id: 6,
+      text: "Element Six"
+    },
+    {
+      id: 7,
+      text: "Element Seven"
+    }
+  ];*/
   render() {
     return(
       <div className='main-block'>
-        <div className='main-block__col main-block__col--left'>Hello left</div>
-        <div className='main-block__col main-block__col--right'>Hello right</div>
+        <Container/>
+        <Container />
       </div>
     );
   }
 }
+
+export default DragDropContext(HTML5Backend)(App);
