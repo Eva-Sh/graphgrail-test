@@ -19,7 +19,7 @@ class App extends Component {
         text: "Element Two"
       },
       {
-        id: 6,
+        id: 3,
         text: "Element Three"
       },
       {
