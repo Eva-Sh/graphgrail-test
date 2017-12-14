@@ -6,43 +6,44 @@ import Container from './components/container';
 import './app.styl';
 
 class App extends Component {
- /*const colOne = [];
-
-  const colTwo = [
-    {
-      id: 1,
-      text: "Element One"
-    },
-    {
-      id: 2,
-      text: "Element Two"
-    },
-    {
-      id: 6,
-      text: "Element Three"
-    },
-    {
-      id: 4,
-      text: "Element Four"
-    },
-    {
-      id: 5,
-      text: "Element Five"
-    },
-    {
-      id: 6,
-      text: "Element Six"
-    },
-    {
-      id: 7,
-      text: "Element Seven"
-    }
-  ];*/
   render() {
+    const colOne = [];
+
+    const colTwo = [
+      {
+        id: 1,
+        text: "Element One"
+      },
+      {
+        id: 2,
+        text: "Element Two"
+      },
+      {
+        id: 6,
+        text: "Element Three"
+      },
+      {
+        id: 4,
+        text: "Element Four"
+      },
+      {
+        id: 5,
+        text: "Element Five"
+      },
+      {
+        id: 6,
+        text: "Element Six"
+      },
+      {
+        id: 7,
+        text: "Element Seven"
+      }
+    ];
+
     return(
       <div className='main-block'>
-        <Container/>
-        <Container />
+        <Container id={ 1 } col={ colOne }/>
+        <Container id={ 2 } col={ colTwo }/>
       </div>
     );
   }
