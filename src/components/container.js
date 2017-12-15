@@ -46,10 +46,10 @@ class Container extends Component {
     const { canDrop, isOver, connectDropTarget } = this.props;
     const isActive = canDrop && isOver;
 
-    const backgroundColor = isActive ? 'pink' : '#FFF';
+    const backgroundColor = isActive ? '#C5CAE9' : '#FFF';
 
     return connectDropTarget(
-      <div className='main-block__col'>
+      <div style={{ backgroundColor }}className='main-block__col'>
         {elements.map((element, i) => {
           return (
             <Element
